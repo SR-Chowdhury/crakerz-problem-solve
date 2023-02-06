@@ -4,13 +4,19 @@
 
 function temperatureConverter(valNum) {
     let c = (valNum-32)/1.8;
-    console.log(typeof c);
-    if (Number.isInteger(c)) {
+
+    if (parseInt(c) == c) 
+    {
         return c;
-    } else {
-        return c.toFixed(2);  
+    } 
+    else 
+    {
+        let newValue = c.toFixed(2);
+        newValue = parseFloat(newValue);
+        return newValue;
     }
+
 }
 
-var result = temperatureConverter(103);
+var result = temperatureConverter(50);
 console.log(result);
