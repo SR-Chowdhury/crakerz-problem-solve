@@ -1,5 +1,5 @@
 /**
- * Conditional Statements: Switch : [X]
+ * Conditional Statements: Switch : [done]
  */
 
 function getLetter(s) {
